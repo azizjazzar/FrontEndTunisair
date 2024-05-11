@@ -1,0 +1,107 @@
+/* hero.css */
+
+/* Background image for hero section */
+.hero {
+  background-image: url("https://humanidades.com/wp-content/uploads/2017/03/aire-cielo-e1564881728869.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+}
+
+
+.pc-tab > input,
+.pc-tab section > div {
+  display: none;
+}
+
+#tab1:checked ~ section .tab1,
+#tab2:checked ~ section .tab2,
+#tab3:checked ~ section .tab3 {
+  display: block;
+}
+
+#tab1:checked ~ nav .tab1,
+#tab2:checked ~ nav .tab2,
+#tab3:checked ~ nav .tab3 {
+  color: red;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,400,700);
+
+
+h1 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 60px;
+  color: #e74c3c;
+ 
+
+}
+
+.pc-tab { 
+
+  width: 700px;
+ 
+  
+  margin: 0 auto;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      label {
+        
+        float: left;
+        padding: 15px 25px;
+        border: 2px solid #ddd;
+        border-bottom: 0;
+       background-color: transparent;
+        color: #000000;
+        cursor: pointer;
+        border-radius: 10%;
+        font-weight: 400;
+        text-decoration: none;
+        text-transform: capitalize;
+       
+      }
+    
+      &:not(:last-child) label {
+         border-right-width: 0; 
+         
+      }
+    }
+  }
+  section {
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: capitalize;
+    clear: both;
+    color: #000000;
+    
+  
+  }
+}
+
+#tab1:checked ~ nav .tab1,
+#tab2:checked ~ nav .tab2,
+#tab3:checked ~ nav .tab3 {
+  label {
+    background: white;
+    color: #111;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 2px;
+      width: 100%;
+   
+      left: 0;
+      bottom: -1px;
+    }
+  }
+}

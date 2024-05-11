@@ -1,0 +1,50 @@
+.SideMenu {
+    background-color: #fff;
+    box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+  }
+  
+  .SideMenuVertical {
+    font-size: 20px;
+  }
+  
+  .SideMenu .ant-menu-item {
+    transition: 0.5s;
+  }
+  
+  .SideMenu .ant-menu-item:hover {
+    color: #55b6cb;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .SideMenu {
+      padding: 0;
+    }
+  
+    .SideMenu .ant-menu-item {
+      display: none;
+    }
+  
+    .SideMenu .toggle {
+      display: block;
+      margin-top: 20px;
+    }
+  
+    .SideMenu .small {
+      position: absolute;
+      top: 12vh; /* Adjust this value as needed */
+      left: 0;
+      width: 80%;
+      background-color: #55b6cb;
+      padding: 10px;
+    }
+  
+    .SideMenu .ant-menu-item a {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+  }
+  

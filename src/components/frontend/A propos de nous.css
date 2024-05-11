@@ -1,0 +1,108 @@
+.description-box {
+    background-color: lightblue; /* Couleur bleu ciel */
+    padding: 20px;
+    width: 400px;
+    top: 50%; /* Positionner au milieu verticalement */
+    left: 70px;
+    height: 600px;
+    color: black; /* Couleur du texte */
+    position: relative; /* Ajout d'une position relative pour positionner les éléments enfants */
+    text-align: center; /* Centrer le contenu horizontalement */
+}
+
+.description-box h3 {
+    font-size: 36px; /* Taille de police plus grande */
+    font-weight: bold;
+    color: white;
+    position: absolute; /* Positionnement absolu pour centrer verticalement */
+    top: 50%; /* Positionner le titre au milieu de la boîte */
+    left: 50%; /* Centrer horizontalement */
+    transform: translate(-50%, -50%); /* Centrer horizontalement et verticalement */
+    transition: opacity 0.3s; /* Ajouter une transition pour le titre */
+}
+
+.description-box:hover h3 {
+    opacity: 0; /* Faire disparaître le titre lors du survol */
+}
+
+.description-box:hover .hidden {
+    display: block; /* Afficher le paragraphe au survol de la boîte */
+}
+
+.hidden {
+    display: none; /* Cacher le paragraphe par défaut */
+}
+.description-box .hidden {
+    display: none; /* Cacher le paragraphe par défaut */
+    text-align: center; /* Centrer le texte horizontalement */
+    color: rgb(110, 107, 107); /* Couleur du texte gris */
+    letter-spacing: 1px; /* Espacement des lettres */
+    padding-top: 30%;
+}
+
+
+
+
+.custom-paragraph {
+    font-weight: bold; /* Mettre en gras */
+    font-size: 49px; /* Taille de police grande */
+    color: gray; /* Couleur gris */
+    text-align: center; /* Centrer le texte */
+    margin-bottom: 140px; /* Ajouter de l'espace en bas */
+margin-top: 140px;
+}
+
+
+
+.container {
+    grid-gap: 80px; /* Ajoute un espacement entre les boîtes */
+    display: flex; /* Utilisation de flexbox */
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center; /* Aligne le contenu horizontalement au centre */
+    padding-bottom: 10%;
+    }
+ 
+
+
+
+.description-box2 {
+    background-color: lightblue; /* Couleur bleu ciel */
+    padding: 20px;
+    width: 400px;
+    top: 50%; /* Positionner au milieu verticalement */
+    left: 70px;
+    height: 600px;
+    color: black; /* Couleur du texte */
+    position: relative; /* Ajout d'une position relative pour positionner les éléments enfants */
+    text-align: center; /* Centrer le contenu horizontalement */
+}
+
+.description-box2 h3 {
+    font-size: 36px; /* Taille de police plus grande */
+    font-weight: bold;
+    color: white;
+    position: absolute; /* Positionnement absolu pour centrer verticalement */
+    top: 50%; /* Positionner le titre au milieu de la boîte */
+    left: 50%; /* Centrer horizontalement */
+    transform: translate(-50%, -50%); /* Centrer horizontalement et verticalement */
+    transition: opacity 0.3s; /* Ajouter une transition pour le titre */
+}
+
+.description-box2:hover h3 {
+    opacity: 0; /* Faire disparaître le titre lors du survol */
+}
+
+.description-box2:hover .hidden {
+    display: block; /* Afficher le paragraphe au survol de la boîte */
+}
+
+.hidden {
+    display: none; /* Cacher le paragraphe par défaut */
+}
+.description-box2 .hidden {
+    display: none; /* Cacher le paragraphe par défaut */
+    text-align: center; /* Centrer le texte horizontalement */
+    color: rgb(110, 107, 107); /* Couleur du texte gris */
+    letter-spacing: 1px; /* Espacement des lettres */
+    padding-top: 30%;
+}
