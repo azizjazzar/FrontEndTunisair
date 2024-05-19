@@ -48,7 +48,7 @@ export default function Cerveaux() {
             language: "fr-FR",
             voiceIndex: actor
           });
-          setPermatranscript(permatranscript + " " + transcript); // Append to permatranscript
+          setPermatranscript(permatranscript + " " + transcript); 
         } 
       }
     };

@@ -150,63 +150,63 @@ const Chatbot = () => {
     };
 
     return (
-        <div className="chatbot-container">
-            {!isChatbotOpen && (
-                <button className="chatbot-button" onClick={toggleChatbot}>
-                    <img className="bg-white" src="https://th.bing.com/th/id/R.2063815249cc5fd9c8de1ca8c88938c0?rik=YnKWCQ%2bRY%2bRJIw&pid=ImgRaw&r=0" alt="Bot Icon" />
-                </button>
-            )}
-            {isChatbotOpen && (
-                <div className="chat-window">
-                    <div className="chat-header">
-                        <div className="avatar">
-                            <img className="bg-white" src="https://th.bing.com/th/id/R.2063815249cc5fd9c8de1ca8c88938c0?rik=YnKWCQ%2bRY%2bRJIw&pid=ImgRaw&r=0" alt="Bot Avatar" />
-                        </div>
-                        <div className="bot-info">
-                            <div className="bot-name">Tunisair Bot</div>
-                            <div className="bot-status">Online</div>
-                        </div>
-                        <button className="close-button" onClick={() => setIsChatbotOpen(false)}>X</button>
+        <div >
+        {!isChatbotOpen && (
+            <button onClick={toggleChatbot}>
+                <img className="chatbot-button "  style={{ border: "2px solid blue" }} src="https://th.bing.com/th/id/R.2063815249cc5fd9c8de1ca8c88938c0?rik=YnKWCQ%2bRY%2bRJIw&pid=ImgRaw&r=0" alt="Bot Icon" />
+            </button>
+        )}
+        {isChatbotOpen && (
+            <div className="chat-window">
+                <div className="chat-header">
+                    <div className="avatar">
+                        <img className="bg-white" src="https://th.bing.com/th/id/R.2063815249cc5fd9c8de1ca8c88938c0?rik=YnKWCQ%2bRY%2bRJIw&pid=ImgRaw&r=0" alt="Bot Avatar" />
                     </div>
-                    <div className="chat-messages ">
-                        {botResponses.slice().reverse().map((message, index) => (
-                            <div key={index} className={`message ${message.type === 'user' ? 'user-message' : 'bot-message'}`}>
-
-                                {message.type === 'bot' && (
-                                    <div className="avatar ">
-                                        <img className="bg-white" src="https://th.bing.com/th/id/R.2063815249cc5fd9c8de1ca8c88938c0?rik=YnKWCQ%2bRY%2bRJIw&pid=ImgRaw&r=0" alt="Bot Avatar" />
-                                    </div>
-                                )}
-                                <div className="message-content">
-                                    {message.type === 'user' ? 'You: ' : ''}
-                                    {message.content}
-                                </div>
-                            </div>
-                        ))}
+                    <div className="bot-info">
+                        <div className="bot-name">Tunisair Bot</div>
+                        <div className="bot-status">Online</div>
                     </div>
-                    <div className="chat-input">
-                        <input
-                            type="text"
-                            value={userMessage}
-                            onChange={(e) => {
-                                setUserMessage(e.target.value);
-                                searchQuestions(e.target.value);
-                            }}
-                            onKeyDown={handleKeyDown}
-                            placeholder="Type your message..."
-                        />
-                        <button onClick={sendMessage}>Send</button>
-                    </div>
-                    <div className="suggested-questions">
-                        {suggestedQuestions.map((question, index) => (
-                            <div key={index} className="suggested-question" onClick={() => setUserMessage(question)}>
-                                <span className="suggested-question-text">{question}</span>
-                            </div>
-                        ))}
-                    </div>
+                    <button className="close-button" onClick={() => setIsChatbotOpen(false)}>X</button>
                 </div>
-            )}
-        </div>
+                <div className="chat-messages ">
+                    {botResponses.slice().reverse().map((message, index) => (
+                        <div key={index} className={`message ${message.type === 'user' ? 'user-message' : 'bot-message'}`}>
+                            {message.type === 'bot' && (
+                                <div className="avatar">
+                                    <img className="bg-white" src="https://th.bing.com/th/id/R.2063815249cc5fd9c8de1ca8c88938c0?rik=YnKWCQ%2bRY%2bRJIw&pid=ImgRaw&r=0" alt="Bot Avatar" />
+                                </div>
+                            )}
+                            <div className="message-content">
+                                {message.type === 'user' ? 'You: ' : ''}
+                                {message.content}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+                <div className="chat-input">
+                    <input
+                        type="text"
+                        value={userMessage}
+                        onChange={(e) => {
+                            setUserMessage(e.target.value);
+                            searchQuestions(e.target.value);
+                        }}
+                        onKeyDown={handleKeyDown}
+                        placeholder="Type your message..."
+                    />
+                    <button onClick={sendMessage}>Send</button>
+                </div>
+                <div className="suggested-questions">
+                    {suggestedQuestions.map((question, index) => (
+                        <div key={index} className="suggested-question" onClick={() => setUserMessage(question)}>
+                            <span className="suggested-question-text">{question}</span>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        )}
+    </div>
+    
     );
 };
 
