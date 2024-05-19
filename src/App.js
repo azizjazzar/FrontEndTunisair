@@ -23,6 +23,7 @@ import UserProfile from './components/frontend/Home/Profil';
 import MultiStepForm from './components/frontend/moteur';
 import Help from './components/IA/Help';
 import aproposdenous from './components/frontend/A propos de nous';
+import pourqoui from './components/frontend/header/pourqoui';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <Route exact path="/admin/profile" Component={Profile} />
           <Route exact path="/Help" Component={Help} />
           <Route exact path="/A propos de nous" Component={aproposdenous} />
+          <Route exact path="/pourqoui" Component={pourqoui} />
 
 
 

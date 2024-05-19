@@ -2,7 +2,7 @@
 
 /* Background image for hero section */
 .hero {
-  background-image: url("https://humanidades.com/wp-content/uploads/2017/03/aire-cielo-e1564881728869.jpg");
+  background-image: url("https://static.wixstatic.com/media/82fcd3_ea79ad7188fe4c48b08711b923056ad1~mv2.jpeg/v1/fill/w_1891,h_1260,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/82fcd3_ea79ad7188fe4c48b08711b923056ad1~mv2.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -11,97 +11,96 @@
 }
 
 
-.pc-tab > input,
-.pc-tab section > div {
+.pc-tab>input,
+.pc-tab section>div {
   display: none;
 }
 
-#tab1:checked ~ section .tab1,
-#tab2:checked ~ section .tab2,
-#tab3:checked ~ section .tab3 {
+#tab1:checked~section .tab1,
+#tab2:checked~section .tab2,
+#tab3:checked~section .tab3 {
   display: block;
 }
 
-#tab1:checked ~ nav .tab1,
-#tab2:checked ~ nav .tab2,
-#tab3:checked ~ nav .tab3 {
-  color: red;
-}
 
 
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
-@import url(https://fonts.googleapis.com/css?family=Raleway:100,400,700);
 
 
-h1 {
-  text-align: center;
-  font-weight: 100;
-  font-size: 60px;
-  color: #e74c3c;
- 
 
-}
 
-.pc-tab { 
 
-  width: 700px;
- 
-  
+.pc-tab {
+
+  width: 80%;
+  /* Modification de la largeur en 100% */
+  max-width: none;
+  /* Annule la largeur maximale définie */
+
   margin: 0 auto;
+
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    li {
+  }
+     li {
       label {
-        
+
         float: left;
-        padding: 15px 25px;
-        border: 2px solid #ddd;
-        border-bottom: 0;
-       background-color: transparent;
-        color: #000000;
+        padding: 8px 90px;
+        border: 2px solid white;
+        
+        background-color: transparent;
         cursor: pointer;
         border-radius: 10%;
-        font-weight: 400;
-        text-decoration: none;
-        text-transform: capitalize;
        
+
       }
+
     
-      &:not(:last-child) label {
-         border-right-width: 0; 
-         
-      }
-    }
+    
   }
-  section {
-    font-weight: 400;
-    text-decoration: none;
-    text-transform: capitalize;
-    clear: both;
-    color: #000000;
-    
+
   
-  }
+  
 }
 
-#tab1:checked ~ nav .tab1,
-#tab2:checked ~ nav .tab2,
-#tab3:checked ~ nav .tab3 {
+
+
+#tab1:checked~nav .tab1,
+#tab2:checked~nav .tab2,
+#tab3:checked~nav .tab3 {
   label {
-    background: white;
-    color: #111;
-    position: relative;
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      height: 2px;
-      width: 100%;
-   
-      left: 0;
-      bottom: -1px;
-    }
+    color: white; /* Couleur du texte */
+    padding: 7px 60px;
+  border-radius: 4px;
+  font-weight: bold; /* Met le texte en gras */
+
   }
+  label:hover {
+    color:rgb(94, 239, 232);; /* Couleur du texte au survol */
+  }
+
 }
+
+.button-88 {
+  background-color: rgb(78, 166, 201); /* Couleur de fond normale */
+  color: white; /* Couleur du texte */
+  border: none;
+  padding: 7px 40px;
+  border-radius: 4px;
+  transition: background-color 0.3s; /* Transition douce pour la couleur de fond */
+  margin-top: 10px; /* Ajoute une marge en haut de 10 pixels */
+
+}
+
+.button-88:hover {
+  background-color: rgb(72, 72, 220); /* Couleur de fond au survol */
+}
+
+.custom-container {
+  max-width: 1000px; /* Définissez la largeur maximale souhaitée */
+  margin-left: auto; /* Pour centrer le container horizontalement */
+  margin-right: auto;
+}
+

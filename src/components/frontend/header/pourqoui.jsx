@@ -1,22 +1,15 @@
-import Header from '../frontend/header/header';
 import React from 'react';
-import './A propos de nous.css';
-function aproposdenous() {
+import './pourqoui.css';
+
+function Pourqoui() {
+
     return (
-        <div>
-            <Header></Header>
-            <div className="relative">
-                <img src="https://images.pexels.com/photos/2775196/pexels-photo-2775196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Logo" />
-                <h1 className="absolute inset-x-0 top-1/2 transform -translate-y-1/2 text-center text-white-500 text-5xl font-serif font-bold bg-white-800 bg-opacity-0">
-                    <span className="text-white font-bold text-6xl">VOIR</span> | <span className="text-white font-bold text-6xl">DÉCOUVRIR</span> <br />
-                    <span className="text-white font-bold text-6xl">VIVRE</span> | <span className="text-white font-bold text-6xl">S'ÉVADER</span>
-                </h1>
+<div>
 
-            </div>
-            <p class="custom-paragraph">A PROPOS DE NOUS </p>
-
-            <div className="container">
-                <div className="description-box">
+           
+            <p class="custom-paragraph">POURQOUI NOUS-CHOISIR </p>
+            <div className="container2">
+                <div className="description-box3">
                     <h3 className="">PRESENTATION</h3>      <p className="hidden">
 
 
@@ -24,20 +17,21 @@ function aproposdenous() {
                 </div>
 
 
+                <div className="description-box2">
+                    <h3 className="">NOS VALEURS</h3>      <p className="hidden">
+                        Notre agence de voyage s'engage à offrir une expérience exceptionnelle à chaque voyage. Nous sommes reconnus pour notre rapport qualité-prix, notre sécurité et notre service client. Notre équipe expérimentée vous propose les meilleures offres et les itinéraires les plus sûrs, pour voyager en toute tranquillité. Que vous cherchiez des vacances en famille, une escapade romantique ou une aventure, nous avons ce qu'il vous faut. Attendez-vous à des voyages mémorables et une satisfaction garantie à chaque étape. Faites-nous confiance pour vous guider vers des destinations extraordinaires .      </p>
+                </div>
                 <div className="description-box">
                     <h3 className="">NOS VALEURS</h3>      <p className="hidden">
                         Notre agence de voyage s'engage à offrir une expérience exceptionnelle à chaque voyage. Nous sommes reconnus pour notre rapport qualité-prix, notre sécurité et notre service client. Notre équipe expérimentée vous propose les meilleures offres et les itinéraires les plus sûrs, pour voyager en toute tranquillité. Que vous cherchiez des vacances en famille, une escapade romantique ou une aventure, nous avons ce qu'il vous faut. Attendez-vous à des voyages mémorables et une satisfaction garantie à chaque étape. Faites-nous confiance pour vous guider vers des destinations extraordinaires .      </p>
                 </div>
-            </div>
+    </div>
+    </div>
 
-
-
-
-            {/* Ajoutez ici d'autres informations d'aide */}
-
-
-        </div>
+    
+           
     );
 }
 
-export default aproposdenous;
+export default Pourqoui;
+

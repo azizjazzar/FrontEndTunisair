@@ -106,3 +106,24 @@ margin-top: 140px;
     letter-spacing: 1px; /* Espacement des lettres */
     padding-top: 30%;
 }
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(100px); /* Déplacez l'élément vers le bas */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Déplacez l'élément à sa position initiale */
+    }
+  }
+  
+  .hidden {
+    opacity: 0;
+  }
+  
+  .description-box,
+  .description-box2 {
+    animation: slideIn 5s ease forwards; /* Animation de 0.5 secondes avec une accélération constante */
+  }
+  
+  
