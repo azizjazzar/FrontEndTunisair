@@ -153,7 +153,7 @@ const Chatbot = () => {
         <div >
         {!isChatbotOpen && (
             <button onClick={toggleChatbot}>
-                <img className="chatbot-button "  style={{ border: "2px solid blue" }} src="https://th.bing.com/th/id/R.2063815249cc5fd9c8de1ca8c88938c0?rik=YnKWCQ%2bRY%2bRJIw&pid=ImgRaw&r=0" alt="Bot Icon" />
+                <img className="chatbot-button "   src="/img/chatbot.png" alt="Bot Icon" />
             </button>
         )}
         {isChatbotOpen && (
