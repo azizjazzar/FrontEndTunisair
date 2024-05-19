@@ -35,7 +35,6 @@ function App() {
 
           <Route exact path="/" Component={Pages} />
           <Route exact path="/page" Component={Pages} />
-
           <Route path="/indexx" Component={AccountBox} />
           <Route exact path="/profil" Component={UserProfile} />
           <Route exact path="/admin" Component={MasterLayout} />
@@ -44,11 +43,6 @@ function App() {
           <Route exact path="/Help" Component={Help} />
           <Route exact path="/A propos de nous" Component={aproposdenous} />
           <Route exact path="/pourqoui" Component={pourqoui} />
-
-
-
-
-
           <Route exact path="/admin/client" Component={UserList} />
           <Route exact path="/admin/update/:id" Component={UpdateUser} />
           <Route exact path="/admin/addclient" Component={AddUser} />
@@ -56,13 +50,10 @@ function App() {
           <Route exact path="/admin/listecontract" Component={ContractList} />
           <Route exact path="/admin/updatecontract/:id" Component={UpdateContract} />
           <Route exact path="/admin/chartuser" Component={UserCountChart} />
-
           <Route exact path="/admin/formcompte" Component={CompteAlimentationForm} />
           <Route exact path="/admin/tablecompte" Component={CompteTable} />
           <Route exact path="/admin/paymentform" Component={PaymentForm} />
-
           <Route exact path="/admin/actualite" Component={Actualite} />
-
           <Route exact path="/admin/moteur" Component={MultiStepForm} />
         </Routes>
       </Router>
