@@ -5,16 +5,16 @@ import axios from 'axios';
 import './Chatbot.css';
 const fetchResponseFromAPI = async (trans) => {
     try {
-      const res = await axios.post(
-        `http://localhost:8000/api/IA`,
-        { text: trans }
-      );
-      return res.data.answer;
+        const res = await axios.post(
+            `http://localhost:8000/api/IA`,
+            { text: trans }
+        );
+        return res.data.answer;
     } catch (error) {
-      console.error("Error fetching data from the OpenAI API:", error);
-      return "Une erreur s'est produite lors de la récupération de la réponse.";
+        console.error("Error fetching data from the OpenAI API:", error);
+        return "Une erreur s'est produite lors de la récupération de la réponse.";
     }
-  };
+};
 const Chatbot = () => {
     const [userMessage, setUserMessage] = useState('');
     const [botResponses, setBotResponses] = useState([]);
@@ -23,17 +23,35 @@ const Chatbot = () => {
     const [suggestedQuestions, setSuggestedQuestions] = useState([]);
     const allQuestions = [
         "Qu'est-ce que Tunisair ?",
-        "Comment prendre une consultation ?",
-        "Comment voir les services des freelancers ?",
-        "Comment collaborer sur des projets ?",
-        "Comment fonctionne le paiement sur la plateforme ?",
-        "Comment contacter le support ?",
-        "Comment devenir freelancer ?",
-        "Comment fonctionne la notation des freelancers ?",
-        "Je veux trouver un projet",
-        "Je veux écrire un blog",
-        "Je veux faire une consultation",
-        "Je veux faire une "
+        "Comment réserver un vol avec Tunisair ?",
+        "Quels sont les services offerts par Tunisair ?",
+        "Comment puis-je modifier ma réservation ?",
+        "Quelles sont les politiques de bagages de Tunisair ?",
+        "Comment puis-je annuler mon vol ?",
+        "Comment obtenir un remboursement ?",
+        "Quels sont les moyens de paiement acceptés par Tunisair ?",
+        "Comment puis-je contacter le service client de Tunisair ?",
+        "Quels sont les avantages du programme de fidélité Fidelys ?",
+        "Comment puis-je m'inscrire au programme de fidélité Fidelys ?",
+        "Quels documents sont nécessaires pour voyager ?",
+        "Comment puis-je m'enregistrer en ligne ?",
+        "Comment fonctionne le système de points Fidelys ?",
+        "Comment puis-je ajouter des services supplémentaires à ma réservation ?",
+        "Quels sont les services disponibles en vol ?",
+        "Comment puis-je signaler un bagage perdu ?",
+        "Quelles sont les destinations desservies par Tunisair ?",
+        "Comment obtenir des informations sur les vols en temps réel ?",
+        "Quels sont les frais pour les modifications de réservation ?",
+        "Quelles sont les options de repas à bord ?",
+        "Comment puis-je réserver un siège spécifique ?",
+        "Quels sont les droits des passagers en cas de retard ou d'annulation ?",
+        "Comment gérer ma réservation en ligne ?",
+        "Quels sont les services pour les passagers à mobilité réduite ?",
+        "Comment vérifier les exigences de visa pour ma destination ?",
+        "Comment puis-je obtenir des informations sur les vols en correspondance ?",
+        "Quels sont les services offerts aux voyageurs fréquents ?",
+        "Comment puis-je m'inscrire aux alertes de vol ?",
+        "Comment puis-je obtenir un certificat de vol ?"
     ];
 
     useEffect(() => {
@@ -53,7 +71,7 @@ const Chatbot = () => {
     const sendMessage = async () => {
         if (userMessage.trim() !== '') {
             try {
-                const response = await fetchResponseFromAPI("Donc, je t'explique : vous êtes un assistant vocal pour Tunisair. Réponds-moi sans utiliser (*). Voici les dialogues précédents (si c'est vide, ignore) : "+userMessage);
+                const response = await fetchResponseFromAPI("Donc, je t'explique : vous êtes un assistant vocal pour Tunisair. Réponds-moi sans utiliser (*). Voici les dialogues précédents (si c'est vide, ignore) : " + userMessage);
                 setBotResponses(prevResponses => [
                     ...prevResponses,
                     { type: 'user', content: userMessage }
@@ -92,7 +110,7 @@ const Chatbot = () => {
                         window.location.href = '/buyProject';
                     }, 6000);
                 }
-                
+
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
@@ -132,17 +150,17 @@ const Chatbot = () => {
         <div className="chatbot-container">
             {!isChatbotOpen && (
                 <button className="chatbot-button" onClick={toggleChatbot}>
-                    <img src="/tunisiar.png" alt="Bot Icon" />
+                    <img className="bg-white" src="https://th.bing.com/th/id/R.2063815249cc5fd9c8de1ca8c88938c0?rik=YnKWCQ%2bRY%2bRJIw&pid=ImgRaw&r=0" alt="Bot Icon" />
                 </button>
             )}
             {isChatbotOpen && (
                 <div className="chat-window">
                     <div className="chat-header">
                         <div className="avatar">
-                            <img src="/img/chatbot.png" alt="Bot Avatar" />
+                            <img className="bg-white" src="https://th.bing.com/th/id/R.2063815249cc5fd9c8de1ca8c88938c0?rik=YnKWCQ%2bRY%2bRJIw&pid=ImgRaw&r=0" alt="Bot Avatar" />
                         </div>
                         <div className="bot-info">
-                            <div className="bot-name">Collabhub Bot</div>
+                            <div className="bot-name">Tunisair Bot</div>
                             <div className="bot-status">Online</div>
                         </div>
                         <button className="close-button" onClick={() => setIsChatbotOpen(false)}>X</button>
@@ -152,7 +170,7 @@ const Chatbot = () => {
                             <div key={index} className={message.type === 'user' ? 'user-message' : 'bot-message'}>
                                 {message.type === 'bot' && (
                                     <div className="avatar">
-                                        <img src="/img/chatbot.png" alt="Bot Avatar" />
+                                        <img className="bg-white" src="https://th.bing.com/th/id/R.2063815249cc5fd9c8de1ca8c88938c0?rik=YnKWCQ%2bRY%2bRJIw&pid=ImgRaw&r=0" alt="Bot Avatar" />
                                     </div>
                                 )}
                                 <div className="message-content">

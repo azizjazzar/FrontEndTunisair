@@ -10,12 +10,11 @@
 .chat-window {
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 340px;
     height: 500px;
     border-radius: 10px;
     overflow: hidden;
     background-color: #fcfcfc;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .chat-header {
@@ -23,7 +22,7 @@
     align-items: center;
     padding: 15px;
     border-bottom: 1px solid #eee;
-    background-color: #2610a1;
+    background-color: #0f0d9e;
     color: #fff;
 }
 
@@ -58,18 +57,18 @@
 }
 
 .user-message {
-    align-self: flex-end; 
+    align-self: flex-end;
     padding: 10px;
-    background-color: #3e0faa; 
+    background-color: #3e0faa;
     color: #fff;
     border-radius: 8px;
     margin: 10px 0;
 }
 
 .bot-message {
-    align-self: flex-start; 
+    align-self: flex-start;
     padding: 10px;
-    background-color: #d60012; 
+    background-color: #d60012;
     color: #fff;
     border-radius: 8px;
     margin: 10px 0;
@@ -90,12 +89,15 @@ input {
     border-radius: 8px;
     font-size: 14px;
 }
+
 button:hover {
     background-color: #3e0faa;
 }
+
 .suggested-questions {
     padding: 10px;
     border-top: 1px solid #eee;
+    background-color: #eee;
 }
 
 .suggested-question {
@@ -105,6 +107,7 @@ button:hover {
     margin-bottom: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
+
 }
 
 .suggested-question:hover {
@@ -113,8 +116,10 @@ button:hover {
 }
 
 .suggested-question-text {
+    background-color: #ffffff;
+
     font-size: 14px;
-    color: #ffffff;
+    color: #000000;
 }
 
 .suggested-question-icon {
@@ -138,7 +143,7 @@ button:hover {
     right: 30px;
     width: 60px;
     height: 60px;
-    background-color: #00087a;
+    background-color: #ffffff;
     border-radius: 50%;
     border: none;
     display: flex;
@@ -150,9 +155,9 @@ button:hover {
 
 .chatbot-button img {
     width: 60px;
-    height: 60px; 
+    height: 60px;
     object-fit: cover;
-    border-radius: 50%; 
+    border-radius: 50%;
 }
 
 
