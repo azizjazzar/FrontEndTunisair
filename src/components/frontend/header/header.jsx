@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Dropdown, Menu ,Button } from "antd";
-
+import Chatbot from "../../IA/Chatbot/ChatBot";
 import "../header/header.css";
 import Cerveaux from "../../IA/Cervaux";
 import { nav } from "../Data/data";
@@ -67,6 +67,9 @@ const Header = () => {
       </div>
       <div className="fixed bottom-10 left-10">
       <Cerveaux/>
+      </div>
+      <div className="fixed bottom-10 right-10">
+      <Chatbot/>
       </div>
     </header>
     
