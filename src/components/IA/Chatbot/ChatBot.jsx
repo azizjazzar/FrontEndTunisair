@@ -21,6 +21,8 @@ const Chatbot = () => {
     const [currentOptions, setCurrentOptions] = useState([]);
     const [isChatbotOpen, setIsChatbotOpen] = useState(false);
     const [suggestedQuestions, setSuggestedQuestions] = useState([]);
+    const [permatranscript, setPermatranscript] = useState("");
+
     const allQuestions = [
         "Qu'est-ce que Tunisair ?",
         "Comment réserver un vol avec Tunisair ?",
@@ -71,51 +73,52 @@ const Chatbot = () => {
     const sendMessage = async () => {
         if (userMessage.trim() !== '') {
             try {
-                const response = await fetchResponseFromAPI("Donc, je t'explique : vous êtes un assistant vocal pour Tunisair. Réponds-moi sans utiliser (*). Voici les dialogues précédents (si c'est vide, ignore) : " + userMessage);
+                const response = await fetchResponseFromAPI(
+                    "Donc, je t'explique : vous êtes un assistant vocal pour Tunisair. Réponds-moi sans utiliser (*). Voici les dialogues précédents (si c'est vide, ignore) : " +
+                    permatranscript + ". Voici le dialogue actuel : " + userMessage
+                  );
+                  setPermatranscript(...permatranscript," ",userMessage)
                 setBotResponses(prevResponses => [
                     ...prevResponses,
                     { type: 'user', content: userMessage }
                 ]);
                 setBotResponses(prevResponses => [
                     ...prevResponses,
-                    { type: 'bot', content: response.data.response }
+                    { type: 'bot', content: response }
                 ]);
                 setUserMessage('');
                 setSuggestedQuestions([]);
-                if (response.data.options) {
-                    setCurrentOptions(response.data.options);
-                } else {
-                    setCurrentOptions([]);
-                }
-
+                setCurrentOptions([]); // Suppression de la condition pour setCurrentOptions([])
+    
                 // Check for specific messages and apply redirection
-                if (response.data.response.includes("je vais vous diriger vers la page consultation")) {
-                    // Delayed redirection after 3 seconds
+                if (response.includes("je vais vous diriger vers la page consultation")) {
+                    // Delayed redirection after 6 seconds
                     setTimeout(() => {
                         window.location.href = '/do-a-quick-consultation';
                     }, 6000);
-                } else if (response.data.response.includes("je vais vous diriger vers la page blog")) {
-                    // Delayed redirection after 3 seconds
+                } else if (response.includes("je vais vous diriger vers la page blog")) {
+                    // Delayed redirection after 6 seconds
                     setTimeout(() => {
                         window.location.href = '/blog';
                     }, 6000);
-                } else if (response.data.response.includes("je vais vous diriger vers la page collaboration")) {
-                    // Delayed redirection after 3 seconds
+                } else if (response.includes("je vais vous diriger vers la page collaboration")) {
+                    // Delayed redirection after 6 seconds
                     setTimeout(() => {
                         window.location.href = '/collaboration';
                     }, 6000);
-                } else if (response.data.response.includes("je vais vous diriger vers la page service")) {
-                    // Delayed redirection after 3 seconds
+                } else if (response.includes("je vais vous diriger vers la page service")) {
+                    // Delayed redirection after 6 seconds
                     setTimeout(() => {
                         window.location.href = '/buyProject';
                     }, 6000);
                 }
-
+    
             } catch (error) {
                 console.error('Error fetching data:', error);
             }
         }
     };
+    
 
     const handleOptionSelect = (option) => {
         sendMessage(option);
@@ -165,11 +168,12 @@ const Chatbot = () => {
                         </div>
                         <button className="close-button" onClick={() => setIsChatbotOpen(false)}>X</button>
                     </div>
-                    <div className="chat-messages">
+                    <div className="chat-messages ">
                         {botResponses.slice().reverse().map((message, index) => (
-                            <div key={index} className={message.type === 'user' ? 'user-message' : 'bot-message'}>
+                            <div key={index} className={`message ${message.type === 'user' ? 'user-message' : 'bot-message'}`}>
+
                                 {message.type === 'bot' && (
-                                    <div className="avatar">
+                                    <div className="avatar ">
                                         <img className="bg-white" src="https://th.bing.com/th/id/R.2063815249cc5fd9c8de1ca8c88938c0?rik=YnKWCQ%2bRY%2bRJIw&pid=ImgRaw&r=0" alt="Bot Avatar" />
                                     </div>
                                 )}
