@@ -26,8 +26,8 @@ const Chatbot = () => {
     const allQuestions = [
         "Qu'est-ce que Tunisair ?",
         "Comment réserver un vol avec Tunisair ?",
-        // Autres questions...
         "Comment puis-je obtenir un certificat de vol ?"
+        
     ];
 
     useEffect(() => {
@@ -170,7 +170,7 @@ const Chatbot = () => {
         <div>
             {!isChatbotOpen ? (
                 <button onClick={toggleChatbot}>
-                    <img className="chatbot-button" src="/img/chatbot.png" alt="Bot Icon" />
+                    <img className="chatbot-button" src="https://miro.medium.com/v2/resize:fit:750/format:webp/1*C_LFPy6TagD1SEN5SwmVRQ.jpeg" alt="Bot Icon" />
                 </button>
             ) : (
                 <div className="chat-window">
@@ -180,7 +180,7 @@ const Chatbot = () => {
                         </div>
                         <div className="bot-info">
                             <div className="bot-name">Tunisair Bot</div>
-                            <div className="bot-status">Online</div>
+                            <div className="bot-status">En Ligne</div>
                         </div>
                         <button className="close-button" onClick={toggleChatbot}>X</button>
                     </div>
@@ -193,7 +193,7 @@ const Chatbot = () => {
                                     </div>
                                 )}
                                 <div className="message-content">
-                                    {message.type === 'user' ? 'You: ' : ''}
+                                    {message.type === 'user' ? 'Vous: ' : ''}
                                     {message.content}
                                 </div>
                             </div>
@@ -208,9 +208,9 @@ const Chatbot = () => {
                                 searchQuestions(e.target.value);
                             }}
                             onKeyDown={handleKeyDown}
-                            placeholder="Type your message..."
+                            placeholder="Ecrivez Votre Message..."
                         />
-                        <button onClick={sendMessage}>Send</button>
+                        <button onClick={sendMessage}>Envoyer</button>
                     </div>
                     <div className="suggested-questions">
                         {suggestedQuestions.map((question, index) => (

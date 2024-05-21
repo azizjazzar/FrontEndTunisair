@@ -1,13 +1,105 @@
-.featured .box {
-    box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
-    border-radius: 6px;
-    text-align: center;
-    padding: 30px;
-    cursor: pointer;
-  }
-  .featured img {
-    width: 65px;
-    height: 65px;
-    margin: auto;
-  }
 
+.sous{ 
+  font-weight: bold; /* Mettre en gras */
+  font-size: 35px; /* Taille de police grande */
+  color: rgba(50, 33, 33, 0.688); /* Couleur gris */
+  text-align: center; /* Centrer le texte */
+  margin-bottom: 250px; /* Ajouter de l'espace en bas */
+}
+
+.body{
+  background-color: rgb(240, 228, 215);
+  width: 100%; /* Définir la largeur du conteneur */
+  padding-right: 1000px; /* Ajouter un espacement intérieur */
+  height: 150%;
+  margin-top: -3%;
+  justify-content: space-between; /* Répartit les éléments sur l'axe horizontal */
+  align-items: flex-start; /* Aligner les éléments en haut de la page */
+ 
+}
+
+.paragraph{
+  margin-top: 150%;
+  padding: 12%;
+  font-size: 38x;
+}
+
+.text-container{
+margin-top: -1%;
+width: 55%; /* Assurez-vous que le texte occupe également la moitié de la largeur de la page */
+
+
+}
+
+
+
+  
+
+
+
+.titre {
+  font-weight: bold; /* Mettre en gras */
+  font-size: 49px; /* Taille de police grande */
+  color: rgba(50, 33, 33, 0.688); /* Couleur gris */
+  text-align: center; /* Centrer le texte */
+  margin-bottom: 10px; /* Ajouter de l'espace en bas */
+margin-top: 140px;
+}
+
+.photo{
+
+  width: 29%; /* Faire en sorte que l'image prenne toute la largeur du conteneur */
+  height: auto;
+  float:right ;
+   position: relative; /* Permet de positionner l'image relativement à sa position initiale */
+  top: -400px; /* Ajuste la position de l'image vers le haut de 50 pixels */
+  left: -60px; /* Déplace l'image vers la gauche de 20 pixels */
+
+}
+
+
+
+.title{
+  
+    font-weight: bold;
+    color: rgb(23, 7, 101);
+    text-align:center;
+
+}
+
+.sous-photo{
+
+  width: 20%; /* Faire en sorte que l'image prenne toute la largeur du conteneur */
+  height: auto;
+  float:right ;
+   position: relative; /* Permet de positionner l'image relativement à sa position initiale */
+  top: -300px; /* Ajuste la position de l'image vers le haut de 50 pixels */
+  left: 120px; /* Déplace l'image vers la gauche de 20 pixels */
+
+
+
+}
+
+.siege{
+  font-weight: bold; /* Mettre en gras */
+  font-size: 45px; /* Taille de police grande */
+  color: rgba(39, 26, 26, 0.688); /* Couleur gris */
+  text-align: center; /* Centrer le texte */
+ margin-top: 49%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
