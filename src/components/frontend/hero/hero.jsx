@@ -34,11 +34,7 @@ const Hero = () => {
             <input id="tab2" type="radio" name="pct" />
             <input id="tab3" type="radio" name="pct" />
             <nav>
-            <ul>
-  <li className="tab1">
-    <label htmlFor="custom-label" className="custom-label" style={{ backgroundColor:'rgba(255, 255, 255, 0.25) , border: 2px solid #ddd', borderRadius: '15px', backdropFilter: 'blur(5px)'}}>Réserver un vol</label>
-  </li>
-</ul>
+          
             </nav>
             <section>
               <div className="tab1">

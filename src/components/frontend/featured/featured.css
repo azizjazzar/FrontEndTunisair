@@ -1,98 +1,71 @@
 
-.sous{ 
-  font-weight: bold; /* Mettre en gras */
-  font-size: 35px; /* Taille de police grande */
-  color: rgba(50, 33, 33, 0.688); /* Couleur gris */
-  text-align: center; /* Centrer le texte */
-  margin-bottom: 250px; /* Ajouter de l'espace en bas */
-}
-
-.body{
-  background-color: rgb(240, 228, 215);
-  width: 100%; /* Définir la largeur du conteneur */
-  padding-right: 1000px; /* Ajouter un espacement intérieur */
-  height: 150%;
-  margin-top: -3%;
-  justify-content: space-between; /* Répartit les éléments sur l'axe horizontal */
-  align-items: flex-start; /* Aligner les éléments en haut de la page */
- 
-}
-
-.paragraph{
-  margin-top: 150%;
-  padding: 12%;
-  font-size: 38x;
-}
-
-.text-container{
-margin-top: -1%;
-width: 55%; /* Assurez-vous que le texte occupe également la moitié de la largeur de la page */
-
-
-}
-
-
-
-  
-
-
-
 .titre {
-  font-weight: bold; /* Mettre en gras */
-  font-size: 49px; /* Taille de police grande */
-  color: rgba(50, 33, 33, 0.688); /* Couleur gris */
+  font-size: 85px; /* Taille de police grande */
   text-align: center; /* Centrer le texte */
   margin-bottom: 10px; /* Ajouter de l'espace en bas */
 margin-top: 140px;
 }
-
 .photo{
-
-  width: 29%; /* Faire en sorte que l'image prenne toute la largeur du conteneur */
+  width: 34%; /* Faire en sorte que l'image prenne toute la largeur du conteneur */
   height: auto;
   float:right ;
    position: relative; /* Permet de positionner l'image relativement à sa position initiale */
-  top: -400px; /* Ajuste la position de l'image vers le haut de 50 pixels */
+  top: -600px; /* Ajuste la position de l'image vers le haut de 50 pixels */
   left: -60px; /* Déplace l'image vers la gauche de 20 pixels */
-
+margin-top: -5%;
 }
-
-
-
-.title{
-  
-    font-weight: bold;
-    color: rgb(23, 7, 101);
-    text-align:center;
-
-}
-
 .sous-photo{
-
   width: 20%; /* Faire en sorte que l'image prenne toute la largeur du conteneur */
   height: auto;
   float:right ;
    position: relative; /* Permet de positionner l'image relativement à sa position initiale */
-  top: -300px; /* Ajuste la position de l'image vers le haut de 50 pixels */
-  left: 120px; /* Déplace l'image vers la gauche de 20 pixels */
-
-
-
+  top: -500px; /* Ajuste la position de l'image vers le haut de 50 pixels */
+  left: 125px; /* Déplace l'image vers la gauche de 20 pixels */
+  margin-top: -5%;
 }
-
 .siege{
-  font-weight: bold; /* Mettre en gras */
-  font-size: 45px; /* Taille de police grande */
-  color: rgba(39, 26, 26, 0.688); /* Couleur gris */
-  text-align: center; /* Centrer le texte */
- margin-top: 49%;
+  font-weight:bolder; /* Mettre en gras */
+  font-size: 50px; /* Taille de police grande */
+  color: rgba(58, 38, 38, 0.688); /* Couleur gris */
+  margin-top: 30%;
+   text-align: center !important;
+  transform: translateX(14%);
+  margin-bottom: -20%;
 }
 
-
-
-
-
-
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px); /* Déplacez l'élément vers le bas */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Déplacez l'élément à sa position initiale */
+  }
+}
+.eff{
+animation: slideIn 3s ease forwards; /* Animation de 0.5 secondes avec une accélération constante */} 
+.efft{
+  animation: slideIn 5s ease forwards; /* Animation de 0.5 secondes avec une accélération constante */} 
+  .effo{
+    animation: slideIn 7s ease forwards; /* Animation de 0.5 secondes avec une accélération constante */} 
+    
+    .first {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -33%; /* Ajustez cette valeur selon votre préférence */
+      text-align: center;
+    }
+    .circle-icon {
+      color: orange; /* Couleur du cercle */
+      font-size: 7em; /* Taille du cercle */
+      margin-right: 1rem; /* Marge entre le cercle et le texte */
+      vertical-align: middle; /* Alignement vertical avec le texte */
+    }
+    
+   
+    
 
 
 

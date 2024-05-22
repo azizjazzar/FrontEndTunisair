@@ -2,16 +2,14 @@
 
 /* Background image for hero section */
 .hero {
-  background-image: url("https://dolgoprudnyy.100potolkov.ru/images/s-fotopechatyu/nebo/nebo-99.jpg");
+  background-image: url("https://static.wixstatic.com/media/82fcd3_ea79ad7188fe4c48b08711b923056ad1~mv2.jpeg/v1/fill/w_1891,h_1134,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/82fcd3_ea79ad7188fe4c48b08711b923056ad1~mv2.jpeg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size:cover;
   height: 100vh;
   width: 100%;
+  margin-bottom: 50%;
 }
-
-
-
 
 .pc-tab>input,
 .pc-tab section>div {
@@ -24,13 +22,6 @@
   display: block;
 }
 
-
-
-
-
-
-
-
 .pc-tab {
 
   width: 80%;
@@ -39,36 +30,10 @@
   /* Annule la largeur maximale définie */
 
   margin: 0 auto;
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-     li {
-      label {
-
-        float: left;
-        padding: 8px 90px;
-        border: 2px solid white;
-        
-        background-color: transparent;
-        cursor: pointer;
-        border-radius: 10%;
-       
-
-      }
-
-    
     
   }
 
   
-  
-}
-
-
-
 #tab1:checked~nav .tab1,
 #tab2:checked~nav .tab2,
 #tab3:checked~nav .tab3 {
@@ -97,12 +62,7 @@
 }
 
 .button-88:hover {
-  background-color: rgb(72, 72, 220); /* Couleur de fond au survol */
+  background-color: rgb(52, 52, 215); /* Couleur de fond au survol */
 }
 
-.custom-container {
-  max-width: 1000px; /* Définissez la largeur maximale souhaitée */
-  margin-left: auto; /* Pour centrer le container horizontalement */
-  margin-right: auto;
-}
 
