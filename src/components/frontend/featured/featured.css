@@ -25,7 +25,7 @@ margin-top: -5%;
 }
 .siege{
   font-weight:bolder; /* Mettre en gras */
-  font-size: 50px; /* Taille de police grande */
+  font-size: 51px; /* Taille de police grande */
   color: rgba(58, 38, 38, 0.688); /* Couleur gris */
   margin-top: 30%;
    text-align: center !important;
@@ -48,7 +48,7 @@ animation: slideIn 3s ease forwards; /* Animation de 0.5 secondes avec une accé
 .efft{
   animation: slideIn 5s ease forwards; /* Animation de 0.5 secondes avec une accélération constante */} 
   .effo{
-    animation: slideIn 7s ease forwards; /* Animation de 0.5 secondes avec une accélération constante */} 
+    animation: slideIn 9s ease forwards; /* Animation de 0.5 secondes avec une accélération constante */} 
     
     .first {
       position: absolute;
@@ -59,9 +59,9 @@ animation: slideIn 3s ease forwards; /* Animation de 0.5 secondes avec une accé
     }
     .circle-icon {
       color: orange; /* Couleur du cercle */
-      font-size: 7em; /* Taille du cercle */
-      margin-right: 1rem; /* Marge entre le cercle et le texte */
-      vertical-align: middle; /* Alignement vertical avec le texte */
+      font-size: 5em; /* Taille du cercle */
+      margin-right: 0.8rem; /* Marge entre le cercle et le texte */
+      vertical-align:middle; /* Alignement vertical avec le texte */
     }
     
    

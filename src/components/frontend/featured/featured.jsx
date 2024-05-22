@@ -16,8 +16,10 @@ const Featured = () => {
       
       <div className={`first ${showElements ? 'show' : ''}`}>
         <h1 className="  absolute inset-x-1 top-1/2 text-center  text-5xl font-serif font-bold ">
-          <span className="text-black font-bold text-7xl">VOIR</span> | <span className="text-black font-bold text-7xl">DÉCOUVRIR</span> <br />
-          <span className="text-black font-bold text-7xl">VIVRE</span> | <span className="text-black font-bold text-7xl">S'ÉVADER</span>
+        <span className="text-blue-300 font-bold text-7xl">VOIR</span> | 
+<span className="text-orange-300 font-bold text-7xl">DÉCOUVRIR</span> <br />
+<span className="text-green-300 font-bold text-7xl">VIVRE</span> | 
+<span className="text-brown-300 font-bold text-7xl">S'ÉVADER</span>
         </h1>
       </div>
 
