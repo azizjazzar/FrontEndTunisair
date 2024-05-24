@@ -210,7 +210,9 @@ const Chatbot = () => {
                             onKeyDown={handleKeyDown}
                             placeholder="Ecrivez Votre Message..."
                         />
+                        <div className='envoi'>
                         <button onClick={sendMessage}>Envoyer</button>
+                        </div>
                     </div>
                     <div className="suggested-questions">
                         {suggestedQuestions.map((question, index) => (

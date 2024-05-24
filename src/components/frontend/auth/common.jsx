@@ -1,5 +1,13 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  width: 100%;
+  height: 100%;
+  background-image: url('https://plus.unsplash.com/premium_photo-1682310468892-5d8ade38f606?q=80&w=1824&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+`;
+
 export const BoxContainer = styled.div`
   width: 100%;
   display: flex;
@@ -29,7 +37,7 @@ export const BoldLink = styled.a`
   color: rgba(129, 158, 216, 0.8);
   font-weight: 500;
   text-decoration: none;
-  border-bottom: 1px dashed rgba(241,196,15,1);
+  border-bottom: 1px dashed rgba(241, 196, 15, 1);
 `;
 
 export const Input = styled.input`
@@ -46,7 +54,6 @@ export const Input = styled.input`
     color: rgba(200, 200, 200, 1);
   }
 
-
   &:focus {
     outline: none;
     border-bottom: 1px solid rgba(241, 196, 15, 1);
@@ -56,7 +63,6 @@ export const Input = styled.input`
 export const SubmitButton = styled.button`
   width: 100%;
   max-width: 150px;
-  
   padding: 10px;
   color: #fff;
   font-size: 15px;

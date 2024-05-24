@@ -66,7 +66,7 @@ export function LoginForm({ onLogin }) {
         <FormContainer onSubmit={handleSubmit}>
           <Input
             type="email"
-            placeholder="Email"
+            placeholder=" Entrer votre E-mail"
             name="email"
             value={formData.email}
             onChange={handleChange}
@@ -75,7 +75,7 @@ export function LoginForm({ onLogin }) {
 
           <Input
             type="password"
-            placeholder="Password"
+            placeholder="Mot de passe"
             name="password"
             value={formData.password}
             onChange={handleChange}
@@ -86,7 +86,7 @@ export function LoginForm({ onLogin }) {
       
           <LineText>
           <BoldLink onClick={switchToPasswordReset} href="#">
-          <MutedLink >Forget your password?</MutedLink>
+          <MutedLink >Mot de passe oublié ?</MutedLink>
           </BoldLink>
         </LineText>
           <Marginer direction="vertical" margin="1.6em" />
@@ -97,9 +97,9 @@ export function LoginForm({ onLogin }) {
 
         <Marginer direction="vertical" margin="5px" />
         <LineText>
-          Don't have an account?{" "}
+          Si vous n'avez pas un compte ?{" "}
           <BoldLink onClick={switchToSignup} href="#">
-            Signup
+       Inscription 
           </BoldLink>
         </LineText>
       </BoxContainer>

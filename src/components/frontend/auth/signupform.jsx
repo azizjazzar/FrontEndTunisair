@@ -111,25 +111,25 @@ export function SignupForm(props) {
                   value={formData.name}
                   onChange={handleChange} />
         <Input type="email"
-                  placeholder="Enter email"
+                  placeholder="Enter votre e-mail"
                   name="email"
                   value={formData.email}
                   onChange={handleChange} />
         <Input  type="password"
-                  placeholder="Password"
+                  placeholder="Mot de passe"
                   name="password"
                   value={formData.password}
                   onChange={handleChange}/>
         
         <Marginer direction="vertical" margin={10} />
-      <SubmitButton type="submit" >Signup</SubmitButton>
+      <SubmitButton type="submit" >Connexion</SubmitButton>
       
       </FormContainer>
       <Marginer direction="vertical" margin="5px" />
       <LineText>
-        Already have an account?{" "}
+        J'ai déjà un compte ?{" "}
         <BoldLink onClick={switchToSignin} href="#">
-          Signin
+          Connexion
         </BoldLink>
       </LineText>
     </BoxContainer>

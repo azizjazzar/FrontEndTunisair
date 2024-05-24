@@ -141,9 +141,9 @@ export default function AccountBox(props) {
             transition={expandingTransition}
           />
           {active === "signin" && <HeaderContainer >
-            <HeaderText >Welcome</HeaderText>
-            <HeaderText>Back</HeaderText>
-            <SmallText>Please sign-in to continue!</SmallText>
+            <HeaderText >Bienvenue </HeaderText>
+            <HeaderText> </HeaderText>
+            <SmallText>Connectez-vous pour continuer !</SmallText>
           </HeaderContainer>}
           {active === "signup" && <HeaderContainer>
             <HeaderText>Create</HeaderText>
@@ -152,8 +152,8 @@ export default function AccountBox(props) {
           </HeaderContainer>}
           {active === "resetpassword" && <HeaderContainer>
             <HeaderText>Reset</HeaderText>
-            <HeaderText>Password</HeaderText>
-            <SmallText>Please enter your email !</SmallText>
+            <HeaderText>Mot de passe</HeaderText>
+            <SmallText>Entrez votre E-mail !</SmallText>
           </HeaderContainer>}
         </TopContainer>
         <InnerContainer>
@@ -164,7 +164,7 @@ export default function AccountBox(props) {
           {/* Ajoutez un lien vers le formulaire de réinitialisation de mot de passe */}
           {active !== "resetpassword" && (
             <Link to="/forget-password" style={{ textDecoration: 'none' }}>
-              <SmallText onClick={switchToPasswordReset}>Forget your password?</SmallText>
+              <SmallText onClick={switchToPasswordReset}>Mot de passe oublié?</SmallText>
             </Link>
           )}
         </InnerContainer>
