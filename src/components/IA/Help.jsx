@@ -1,42 +1,63 @@
 import Header from '../frontend/header/header';
 import React from 'react';
-
-function Help() {
-    return (
-        <div style={{ 
-            backgroundImage: "url('https://images.pexels.com/photos/2114014/pexels-photo-2114014.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            backgroundColor: "#FAEBD7", // Couleur de secours au cas où l'image ne se charge pas ou pour les appareils à faible résolution
-        }}>
-            <Header />            
-            <div className='text-center relative'>
-                <h1 className='pb-5'></h1>
-                <h2 className="text-3xl font-bold mt-10 mb-8 text-blue-700 transition-colors ">Pour mieux apprendre notre assistant vocal, nous vous présentons ce guide d'utilisation</h2>
-                <div className="max-w-screen-lg mx-auto flex justify-between">
-                    <div className="w-1/2">
-                        <div className="max-w-xs bg-blue-400 p-10 rounded-lg mb-4 mr-4 hover:translate-y-2 hover:shadow-md transition-transform duration-300">
-                            <p>Pour lancer l'assistant vocal, dites simplement "Bonjour".</p>
-                        </div>
-                        <div className="max-w-xs bg-blue-300 p-11 rounded-lg mb-4 mr-4 hover:translate-y-2 hover:shadow-md transition-transform duration-300">
-                            <p>Accédez à la page d'aide en prononçant "Aide".</p>
-                        </div>
-                        <div className="max-w-xs bg-blue-200 p-8 rounded-lg mb-4 mr-4 hover:translate-y-2 hover:shadow-md transition-transform duration-300">
-                            <p>Si vous souhaitez en savoir plus sur notre agence, demandez "Qui êtes-vous ?"</p>
-                        </div>
-                        <div className="max-w-xs bg-blue-100 p-4 rounded-lg mb-4 mr-4 hover:translate-y-2 hover:shadow-md transition-transform duration-300">
-                            <p>Pour accéder à la fonctionnalité d'envoi de mail, dites "je veux envoyer un mail".</p>
-                        </div>
-                    </div>
-                    <div className="w-1/2">
-                    <img className="max-w-full h-auto" src="https://images.pexels.com/photos/4825709/pexels-photo-4825709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt='' /> {/* Remplacez max-w-xs par max-w-full */}
-                        {/* Ici, nous avons retiré la balise img, car l'image de fond sera désormais utilisée en arrière-plan */}
-                    </div>
-                </div>
+import "./Help.css";
+const Help = () => {
+  return (
+    <div>
+    <div className="bg-cream min-h-screen flex flex-col items-center justify-center">
+      <div className="bg-blur"></div>
+      <h1 className="text-7xl font-bold mb-4">
+        <span className="text-gray-500">GUIDE</span> <span className="text-blue-400">D'UTILISATION</span>
+      </h1>
+      <p className="mb-8 text-2xl text-center">
+        Découvrez comment utiliser au mieux notre assistant vocal pour une expérience utilisateur exceptionnelle et intuitive.
+      </p>
+      <div className="relative group">
+        <div className="grid grid-cols-2 relative group  gap-8 w-full max-w-3xl">
+          <div className="bg-gray-400 text-white p-5  transform group-hover:scale-105 transition duration-500 rounded-lg">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1682310468892-5d8ade38f606?q=80&w=1824&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Anna Harold"
+              className="w-12 h-12 rounded-full mb-2  w-52 h-40 object-cover transform group-hover:scale-105 transition duration-500"
+            />
+            <p className="font-bold"> Notre Assistant vocal est capable de répondre aux questions des utilisateurs concernant Tunisair. </p>
+          </div>
+          <div className="bg-yellow-100 text-black p-4 rounded-lg transform group-hover:scale-105 transition duration-500 ">
+            <p className="font-bold">Notre Assistant vocal est disponible en permanence, offrant une assistance sécurisée et fiable.</p>
+            <div className="flex mt-2">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1682023587356-86065925727a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNoYXRib3R8ZW58MHx8MHx8fDA%3D"
+                alt="Anna Harold"
+                className="w-12 h-12 rounded-full"
+              />
+              <img
+                src="https://plus.unsplash.com/premium_photo-1682023587356-86065925727a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNoYXRib3R8ZW58MHx8MHx8fDA%3D"
+                alt="Alex Silver"
+                className="w-12 h-12 rounded-full mb-2  w-52 h-40 object-cover transform group-hover:scale-105 transition duration-500"
+              />
             </div>
+          </div>
+          <div className=" relative group bg-blue-300 text-white p-4 rounded-lg transform group-hover:scale-105 transition duration-500 ">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1681487612246-a171d00b5e9b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWFwfGVufDB8fDB8fHwx"
+              alt="Alex Silver"
+              className="w-12 h-12 rounded-full mb-2  w-52 h-40 object-cover transform group-hover:scale-105 transition duration-500"
+            />
+            <p className="font-bold">Notre Assistant vocal peut vous orienter vers votre messagerie électronique pour déposer une réclamation de manière professionnelle.</p>
+          </div>
+          <div className=" relative group bg-pink-300 text-white p-4  transform group-hover:scale-105 transition duration-500 rounded-lg">
+            <img
+              src="https://images.unsplash.com/photo-1563126365-9e06b5aabc21?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Alex Silver"
+              className="w-12 h-12 rounded-full mb-2  w-52 h-40 object-cover transform group-hover:scale-105 transition duration-500"
+            />
+            <p className="font-bold">Notre Assistant vocal est en mesure de vous orienter vers la page d'assistance afin d'améliorer votre utilisation.</p>
+          </div>
         </div>
-    );
-}
+      </div>
+    </div>
+  </div>
+  );
+};
 
 export default Help;

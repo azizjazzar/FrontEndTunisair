@@ -24,6 +24,9 @@ import MultiStepForm from './components/frontend/moteur';
 import Help from './components/IA/Help';
 import aproposdenous from './components/frontend/A propos de nous';
 import pourqoui from './components/frontend/header/pourqoui';
+import Footer from './components/frontend/Pages/footer';
+
+
 
 function App() {
   return (
@@ -55,6 +58,7 @@ function App() {
           <Route exact path="/admin/paymentform" Component={PaymentForm} />
           <Route exact path="/admin/actualite" Component={Actualite} />
           <Route exact path="/admin/moteur" Component={MultiStepForm} />
+          <Route exact path="/footer" Component={Footer}/> 
         </Routes>
       </Router>
     </div>
