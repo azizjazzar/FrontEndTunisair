@@ -1,9 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-/* Add this CSS to handle the scaling effect */
-.group:hover .transform {
-    transform: scale(1.05);
+
+
+@layer utilities {
+    .filter-blur {
+      @apply filter blur-lg;
+    }
   }
-  

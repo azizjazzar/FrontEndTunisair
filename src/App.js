@@ -25,7 +25,7 @@ import Help from './components/IA/Help';
 import aproposdenous from './components/frontend/A propos de nous';
 import pourqoui from './components/frontend/header/pourqoui';
 import Footer from './components/frontend/Pages/footer';
-
+import Header from './components/frontend/header/header';
 
 
 function App() {
@@ -59,6 +59,8 @@ function App() {
           <Route exact path="/admin/actualite" Component={Actualite} />
           <Route exact path="/admin/moteur" Component={MultiStepForm} />
           <Route exact path="/footer" Component={Footer}/> 
+          <Route exact path="/header" Component={Header}/> 
+
         </Routes>
       </Router>
     </div>

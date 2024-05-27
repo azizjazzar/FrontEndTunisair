@@ -16,7 +16,7 @@ const Featured = () => {
     <>
       
       <div className={`first ${showElements ? 'show' : ''}`}>
-        <h1 className="  absolute inset-x-1 top-1/2 text-center  text-5xl font-serif font-bold ">
+        <h1 className="  absolute inset-x-1 top-2/2 text-center  text-5xl font-serif font-bold ">
         <span className="text-blue-300 font-bold text-7xl">VOIR</span> | 
 <span className="text-orange-300 font-bold text-7xl">DÉCOUVRIR</span> <br />
 <span className="text-green-300 font-bold text-7xl">VIVRE</span> | 
@@ -24,43 +24,11 @@ const Featured = () => {
         </h1>
       </div>
 
-      <div className={` eff flex flex-col items-start space-y-2 mx-8 my-1 ${showElements ? 'show' : ''}`}>
-        <div className="flex items-start space-x-4">
-          <span className="text-4xl font-bold text-gray-600">01</span>
-          <div>
-            <h3 className="text-6xl font-semibold text-gray-800">Choisissez votre destination</h3>
-            <p className="text-white">Paragraphe.hgfdfd Cliquez ici pour le modifier.Utilisez-le pour vous présenter à vos visiteurs. Paragraphe. Cliquez ici pour le modifier. Utilisez-le pour vous présenter à vos visiteurs.. Utilisez-le pour vous présenter à vos visiteurs.</p>
-          </div>
-        </div>
-      </div>
-
-      <div className={` efft flex flex-col items-start space-y-2 mx-8 my-1 ${showElements ? 'show' : ''}`}>
-        <div className="flex items-start space-x-4">
-          <span className="text-4xl font-bold text-gray-600">02</span>
-          <div>
-            <h3 className="text-6xl font-semibold text-gray-800">Complétez le formulaire</h3>
-            <p className="text-white">Paragraphe.hgfdfd Cliquez ici pour le modifier.Utilisez-le pour vous présenter à vos visiteurs. Paragraphe. Cliquez ici pour le modifier. Utilisez-le pour vous présenter à vos visiteurs.. Utilisez-le pour vous présenter à vos visiteurs.</p>
-          </div>
-        </div>
-      </div>
-
-      <div className={` effo flex flex-col items-start space-y-2 mx-8 my-1 ${showElements ? 'show' : ''}`}>
-        <div className="flex items-start space-x-4">
-          <span className="text-4xl font-bold text-gray-600">03</span>
-          <div>
-            <h3 className="text-6xl font-semibold text-gray-800">Appréciez nos offres !</h3>
-            <p className="text-white">Paragraphe.hgfdfd Cliquez ici pour le modifier.Utilisez-le pour vous présenter à vos visiteurs. Paragraphe. Cliquez ici pour le modifier. Utilisez-le pour vous présenter à vos visiteurs.. Utilisez-le pour vous présenter à vos visiteurs.</p>
-          </div>
-        </div>
-      </div>
+     
 
 
 
-      <div className="photos"> 
-        <img className="photo" src="https://static.wixstatic.com/media/82fcd3_01112a43a6e84c6db5f76aac9fe21d23~mv2.jpg/v1/crop/x_426,y_0,w_2701,h_4193/fill/w_555,h_861,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/GettyImages-1130968613.jpg" alt="photo"></img>
-        <img className="sous-photo" src="https://static.wixstatic.com/media/82fcd3_f63b38f3160f4fa486d48644d4800f97~mv2.jpg/v1/fill/w_379,h_379,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/AdobeStock_201980108.jpg" alt="sous-photo"></img>
-      </div>
-
+    
       <div className="all">
   <section
     className="relative flex items-center justify-center h-screen bg-cover bg-center"
@@ -68,6 +36,8 @@ const Featured = () => {
       backgroundImage: "url('https://static.wixstatic.com/media/61d2a968c438494ba63caed4fb9465dd.jpg/v1/fill/w_1899,h_768,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/61d2a968c438494ba63caed4fb9465dd.jpg')",
     }}
   >
+
+    
     <div className="absolute inset-0 bg-blue-500 opacity-40"></div>
     <div className="relative z-10 text-center text-white">
     <h1 className="text-5xl mb-4 text-lightBlue-100">Bienvenue</h1>
