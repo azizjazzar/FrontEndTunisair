@@ -1,11 +1,13 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faFileContract, faBell } from '@fortawesome/free-solid-svg-icons';
 
 function ComplaintPage() {
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="w-full max-w-screen-xl mx-auto p-8 rounded-lg shadow-lg" style={{backgroundImage: `url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1772&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`}}>
+      <div className="w-full max-w-screen-xl mx-auto p-8 rounded-lg shadow-lg" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1772&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')` }}>
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold">Votre réclamation, Notre priorité</h1>
           <p className="text-xl text-gray-700">Nous vous assistons avec professionnalisme</p>
@@ -28,18 +30,21 @@ function ComplaintPage() {
             <form className="bg-white bg-opacity-50 shadow-md rounded px-8 pt-6 pb-8 mb-4">
               <div className="mb-6">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="lastName">
+                  <FontAwesomeIcon icon={faUser} color="#87CEEB" className="mr-2" />
                   Nom
                 </label>
                 <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="lastName" type="text" placeholder="Nom" />
               </div>
               <div className="mb-6">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="subject">
+                  <FontAwesomeIcon icon={faFileContract} color="#FFC0CB" className="mr-2" />
                   Objet
                 </label>
                 <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="subject" type="text" placeholder="Objet" />
               </div>
               <div className="mb-6">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
+                  <FontAwesomeIcon icon={faBell} color="#00FF00" className="mr-2" />
                   Message
                 </label>
                 <textarea
